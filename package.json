@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my computer science career in a website. also, my two cents on cs related topics.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tre-Seibert/portfolio.git"
+  },
+  "author": "tre seibert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tre-Seibert/portfolio/issues"
+  },
+  "homepage": "https://github.com/Tre-Seibert/portfolio#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
