@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Tre-Seibert/portfolio#readme",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "express": "^4.18.3"
   }
 }
