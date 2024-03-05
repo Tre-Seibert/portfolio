@@ -1,8 +1,14 @@
-.navbar-nav .nav-link {
-    padding: .5rem 1rem;
+body {
+    margin: 0;
+    overflow: hidden;
 }
+#fastmode {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+/* Adjust the position and z-index of the Three.js canvas */
 
-.navbar-brand img {
-    max-width: 40px;
-    border-radius: 50%;
-}
