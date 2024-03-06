@@ -37,7 +37,7 @@ scene.add(starField);
 
 // Initial speed and duration for fast movement
 let speed = 50;
-let fastDuration = 5; // in seconds
+let fastDuration = 1.5; // in seconds
 let slowSpeed = 10;
 let fastMode = true; // Initially in fast mode
 
@@ -49,6 +49,23 @@ let dimmingStarted = false;
 
 // Interval for dimming animation
 let dimmingInterval;
+
+// Function to handle touch start
+function onTouchStart(event) {
+  fastMode = true; // Activate fast mode
+  event.preventDefault(); // Prevent default touch behavior
+}
+
+// Function to handle touch end
+function onTouchEnd(event) {
+  fastMode = false; // Deactivate fast mode
+  event.preventDefault(); // Prevent default touch behavior
+}
+
+// Add event listeners for touch start and end
+window.addEventListener('touchstart', onTouchStart);
+window.addEventListener('touchend', onTouchEnd);
+
 
 // Function to handle spacebar press
 function onKeyDown(event) {

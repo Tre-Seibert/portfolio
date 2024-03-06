@@ -1,14 +1,70 @@
 body {
     margin: 0;
     overflow: hidden;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
 }
+
+/* Fast mode text in top of page */
 #fastmode {
-    position: absolute;
     top: 10px;
     left: 10px;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
 }
-/* Adjust the position and z-index of the Three.js canvas */
+/* Adjust the position and z-index of the Three.js canvas to make it backgrounf */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure the canvas is behind other elements */
+}
+/* container that holds my name */
+#name-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+/* name text */
+#name-container h1 {
+    font-size: 66px;
+    margin-bottom: 20px;
+    color: black;
+    text-shadow:
+        -1px -1px 0 white,  
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+}
+#name-container h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Ensure the border is behind the text */
+}
+/* Social media icons*/
+#social-icons img {
+    width: 40px;
+    margin: 0 10px;
+}
+#social-icons svg {
+    width: 40px;
+    margin: 0 10px;
+    fill: white; /* Set the fill color to white */
+}
+/* Remove underline from links */
+a {
+    text-decoration: none; /* Remove underline */
+}
+/* software engineer text */
+h2 {
+    color: white;
+}
 
